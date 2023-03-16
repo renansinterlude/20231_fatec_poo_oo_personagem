@@ -7,7 +7,7 @@ public class TestePersonagem {
         // var = cria uma variavel de referencia. 
         var p = new Personagem(2, 4, 10); // chamada de construtor
         var p2 = new Personagem(8, 10, 2);
-        
+        var p3 = new Personagem ("John", 10, 10, 10);
         p.nome = "John"; // p. -> operador de acesso a membro (de Personagem)
         // 10, 0, 0, John -> Estado: valores que existem no instante da execução.
         while (true) {

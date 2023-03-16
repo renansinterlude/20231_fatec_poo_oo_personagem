@@ -24,6 +24,14 @@ public class Personagem {
         System.out.println("Construindo um objeto...");
     }
 
+    // chamar um construtor dentro de outro construtor da mesma classe = this
+    Personagem(String nome, int energia, int fome, int sono) {
+        // se for nome = nome, estará atribuindo a nome o proprio nome do parametro
+        // this. == acessando um membro da classe
+        this(energia, fome, sono); // chamando primeiro construtor
+        this.nome = nome;       
+    }
+
     //println == print line
     // isso é um método
     void cacar() {
